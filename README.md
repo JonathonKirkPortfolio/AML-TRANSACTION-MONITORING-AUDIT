@@ -3,11 +3,15 @@
 ## Executive Summary
 A forensic review of May transaction data was conducted to identify anomalous behavior. The analysis revealed severe red flags indicative of cash structuring (smurfing) to evade £10k reporting thresholds, and immediate pass-through activity involving high-risk offshore jurisdictions (Panama to the UAE). 
 
+
+
 ## Technical Methodology
 To isolate the risk within the transaction noise, I utilized a "Core 3" data analysis toolkit:
 Risk Mapping (`XLOOKUP`): Engineered an automated geographical screener to cross-reference counterparty jurisdictions against FATF High-Risk indices.
 Typology Identification (Conditional Formatting): Applied algorithmic highlighting to isolate cash deposits engineered specifically between £8,000 and £9,999.
 Volumetric Aggregation (Pivot Tables): Mapped volumetric flow to identify immediate U-turn transactions and filter out low-level domestic spending.
+
+
 
 ## Key Investigative Findings
 
@@ -25,7 +29,8 @@ The account exhibits a classic "U-turn" pass-through pattern that does not align
 
 <img width="683" height="340" alt="pivot_table" src="https://github.com/user-attachments/assets/73339027-2e3f-4f92-9e2a-2e96d007cde1" />
 
-<img width="165" height="412" alt="risk_flags" src="https://github.com/user-attachments/assets/34691dba-666c-4d48-9440-479278dd9406" />
+<img width="170" height="397" alt="risk_flags" src="https://github.com/user-attachments/assets/54e2376c-4e02-4b71-abf9-40d8365abb5f" />
+
 
 
 ## Conclusion & Recommendation
